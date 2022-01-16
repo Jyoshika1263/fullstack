@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="style sheet" href="jyo.css">
+</head>
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+        }
+        .banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar{
+    text-decoration: none;
+    color:#fff;
+}
+.logo{
+    width:120px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    width:0;
+    height: 2px;
+    background:#009688;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.content{
+    width:100%;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.content h1{
+    font-size:60px;
+    margin-top:80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width:200px;
+    padding:15px 0;
+    background-color:black ;
+    text-align:center;
+    color:#fff;
+    margin:20px 10px;
+    border-radius:25px;
+    border-color:#009688 ;
+    font-weight:bold;
+    cursor: pointer;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+*{
+            margin:0;
+            padding:0;
+            font-family:sans-serif;
+        }
+        .SKILLS{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.contact{
+    color: black;
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+}
+.contact .title::after{
+    content: "get in touch";
+    background-color: #111;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: purple;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color:wh;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+    </style>
+    <section class="HOME" id="HOME">
+    <div class="banner">
+        <div class="navbar">
+            <h1>Full Stack Developer</h1>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1><i>Hello, I am JYOSHIKA</i></h1>
+            <P>Web Designer and developer</P>
+            <div>
+                <button type="button">SEE MORE</button>
+                <button type="button">HIRE ME</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="SKILLS" id="SKILLS">
+    <h2 align="center" style="background-color: teal;">my skills</h2>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+          
+            <div class="col-md-3">
+                <div class="card">
+                    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTffBDk-QZMDPEGW57pL93x63JFJxgO7Pkgpw&usqp=CAU"class="card-img-top" alt="...">
+            <script src=""defer></script>
+            <div class='card-header text-center'>
+                web designer
+            </div>
+            <div class='card-body'>
+                <p>Web designers create the visual aspects of websites. They meet with clients, online or in person, in order to get a clear picture of the message that needs to be portrayed on the website. Once the details are determined, they create layouts, designs, and features that display the client's services in a way that is appealing to the target audience.</p>
+            </div>
+            <button class='btn btn-primary'>See More</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-3">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVSIqmZ1qTnQWK6u_r8RbWtX3nKa-fFnAZkQ&usqp=CAU"class="card-img-top" alt="...">
+            <script src=""defer></script>
+            <div class='card-header text-center'>
+               App designer
+            </div>
+            <div class='card-body'>
+                <p>App Designer is an interactive development environment for designing an app layout and programming its behavior. It provides a fully integrated version of the MATLAB® Editor and a large set of interactive UI components. It also offers a grid layout manager to organize ...... </p>
+            </div>
+            <button class='btn btn-primary'>See More</button>
+        </div>
+    </div>
+    <br>
+    <div class="col-md-3">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOU1ihxBPQkU6sHLKe-SdpzOYJbn01r4Wn9w&usqp=CAU"class="card-img-top" alt="...">
+            <script src=""defer></script>
+            <div class='card-header text-center'>
+                Game designer
+            </div>
+            <div class='card-body'>
+                <p>A game designer is the creative driver responsible for bringing a game to life. They are generally a cross between a writer, artist, and programmer. "It's a multidisciplinary job that often requires you to understand a little of everything,”.......</p>
+            </div>
+            <button class='btn btn-primary'>See More</button>
+        </div>
+    </div>
+</section>
+
+ <!-- contact section start -->
+ <section class="contact" id="contact">
+    <div class="max-width">
+        <h2 align="center" style="background-color: teal;">contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head" style="color: teal;">Name</div>
+                            <div class="sub-title" style="color: teal;">Jyoshika</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head" style="color: teal;">Address</div>
+                            <div class="sub-title" style="color: teal;">Bhimavaram, AP</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head" style="color: teal;">Email</div>
+                            <div class="sub-title" style="color: teal;">abc@gmail.com</div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    
+                    <div class="button-area">
+                        <button type="submit">Send message</button>
+                   
+<!-- <div class="container">
+    <div class="row"> -->
+        <div class="row-right">
+            <div class="card">
+                <img src=" https://st3.depositphotos.com/34646086/37468/v/450/depositphotos_374687404-stock-illustration-vector-concept-of-work-and.jpg"class="card-img-top" alt="..." style="width:250px;height:200px;">
+        
+            </div>
+    </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+    <div class="game"></div>
+    <h2 align="center" style="background-color: teal;">GAME</h2>
+<canvas id="my-canvas" style="border: 2px solid red" width="500" height="500"></canvas>
+<button id="kick">kick (Left Arrow Key)</button>
+<button id="punch">Punch (Right Arrow Key)</button>
+<script type="text/javascript" src="/jyo.js"></script>
+  </div>  
+
+
+<!-- footer section start -->
+<footer>
+    <span>Created By <a>Jyoshika</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+</footer>
+
+    
+    
+</body>
+</html>
